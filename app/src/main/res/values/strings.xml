@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">login2</string>
+    <string-array name="estados_mexico">
+        <item>Aguascalientes</item>
+        <item>Baja California</item>
+        <item>Baja California sur</item>
+        <item>Campeche</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Ciudad de Mexico</item>
+        <item>Coahuila</item>
+        <item>Colima</item>
+        <item>Durango</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalizco</item>
+        <item>Mexico</item>
+        <item>Michoacán</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo León</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+    </string-array>
+</resources>
