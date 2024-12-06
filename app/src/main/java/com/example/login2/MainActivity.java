@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     intencion.putExtra("soltera",true);
                     startActivity(intencion);
                 }else{
-                    Toast.makeText(getApplicationContext(),"Verifica el us y el pass",Toast.LENGTH_LONG)
+                    Toast.makeText(getApplicationContext(),"Verifica el usuario y el password",Toast.LENGTH_LONG)
                             .show();
                 }
 
