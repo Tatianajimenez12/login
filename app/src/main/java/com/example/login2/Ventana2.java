@@ -10,23 +10,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Ventana2 extends AppCompatActivity {
+    // Declaración de un objeto TextView para mostrar información en la interfaz
     TextView text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Activa el diseño Edge-to-Edge para una experiencia de pantalla completa
         EdgeToEdge.enable(this);
+
+        // Asigna el diseño XML de la actividad
         setContentView(R.layout.activity_ventana2);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-        String correo=getIntent().getStringExtra("email");
-        Integer status=getIntent().getIntExtra("status",0);
-        Boolean casada=getIntent().getBooleanExtra("soltera",true);
-        text=(TextView)findViewById(R.id.texto);
-        text.setText(correo);
 
-
-    }
-}
+        // Configura el listener para gestionar el espacio de los "window insets" (barras de
