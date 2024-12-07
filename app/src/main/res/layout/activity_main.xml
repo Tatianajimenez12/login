@@ -53,4 +53,45 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:drawableStart="@android:drawable/ic_lock_idle_lock"
-        android:inputType="
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:backgroundTint="#FF6200EE"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón de Inicio de Sesión -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="#FF6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón de Registro Modificado -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear una Cuenta"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Enlace Modificado -->
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#FF6200EE"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"/>
+
+</LinearLayout>
