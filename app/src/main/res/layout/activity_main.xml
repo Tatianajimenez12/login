@@ -9,18 +9,19 @@
     tools:context=".MainActivity"
     android:background="#F5F5F5">
 
-    <!-- Imagen de usuario modificada -->
+    <!-- Imagen de usuario -->
     <ImageView
         android:id="@+id/userImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:contentDescription="Imagen de usuario"
+        android:contentDescription="@string/imagen_de_usuario"
         android:scaleType="fitCenter"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_launcher_foreground"
+        tools:ignore="ImageContrastCheck" />
 
-    <!-- Título Modificado -->
+    <!-- Título -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="Bienvenido"
+        android:text="@string/bienvenido"
         android:textColor="#FF6200EE"
         android:textSize="28sp"
         android:textStyle="bold" />
@@ -38,26 +39,29 @@
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
+        android:autofillHints=""
+        android:hint="@string/correo_electr_nico"
         android:drawableStart="@android:drawable/ic_menu_send"
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:layout_marginBottom="12dp"
         android:backgroundTint="#FF6200EE"
-        android:fontFamily="sans-serif-light"/>
+        android:fontFamily="sans-serif-light"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <!-- Campo de Contraseña -->
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:drawableStart="@android:drawable/ic_lock_idle_lock"
         android:inputType="textPassword"
         android:padding="12dp"
         android:backgroundTint="#FF6200EE"
         android:fontFamily="sans-serif-light"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
 
     <!-- Botón de Inicio de Sesión -->
     <Button
@@ -68,30 +72,46 @@
         android:backgroundTint="#FF6200EE"
         android:textColor="#FFFFFF"
         android:padding="14dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
-    <!-- Botón de Registro Modificado -->
+    <!-- Botón de Registro -->
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear una Cuenta"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#03DAC5"
-        android:textColor="#FFFFFF"
         android:padding="14dp"
-        android:layout_marginBottom="20dp"/>
+        android:text="@string/crear_una_cuenta"
+        android:textColor="#5E35B1"
+        tools:ignore="VisualLintButtonSize" />
 
-    <!-- Enlace Modificado -->
+    <!-- Enlace para recuperar contraseña -->
     <TextView
         android:id="@+id/textViewForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Olvidaste tu contraseña?"
-        android:textColor="#FF6200EE"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:clickable="true"
+        android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"/>
+        android:minHeight="48dp"
+        android:text="@string/olvidaste_tu_contrase_a"
+        android:textColor="#FF6200EE" />
 
+    <!-- Nuevo enlace para registrarse -->
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/no_te_has_registrado"
+        android:textColor="#00796B" />
 </LinearLayout>
