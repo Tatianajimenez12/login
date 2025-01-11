@@ -8,6 +8,7 @@
     android:id="@+id/mainLayout"
     tools:context=".MainActivity"
     android:background="#F5F5F5">
+<!-- Esto es un comentario en XML -->
 
     <!-- Imagen de usuario -->
     <ImageView
